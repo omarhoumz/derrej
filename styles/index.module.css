@@ -5,12 +5,14 @@
 
 .logoWrapper {
   margin: auto;
+
+  --easing: ease-in-out;
 }
 
 .logoWrapper > img {
   height: 4em;
 
-  animation: hover 4s infinite;
+  animation: hover 4s infinite var(--easing);
 }
 
 @keyframes hover {
@@ -31,11 +33,12 @@
   overflow: auto;
   border-radius: 142px;
   margin-top: 32px;
+
   --c-dark: rgba(0, 0, 0, 0.13);
   --c-light: rgba(0, 0, 0, 0.07);
   box-shadow: 0 0 10px 8px var(--c-light);
   background-color: var(--c-light);
-  animation: hover-shadow 4s infinite;
+  animation: hover-shadow 4s infinite var(--easing);
 }
 
 @keyframes hover-shadow {
