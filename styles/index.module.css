@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.logoWrapper {
+  margin: auto;
+}
+
+.logoWrapper > img {
+  height: 4em;
+
+  animation: hover 4s infinite;
+}
+
+@keyframes hover {
+  from {
+    transform: translateY(-10vh);
+  }
+  60% {
+    transform: translateY(0vh);
+  }
+  to {
+    transform: translateY(-10vh);
+  }
+}
+
+.shadow {
+  height: 5px;
+  width: 100%;
+  overflow: auto;
+  border-radius: 142px;
+  margin-top: 32px;
+  --c-dark: rgba(0, 0, 0, 0.13);
+  --c-light: rgba(0, 0, 0, 0.07);
+  box-shadow: 0 0 10px 8px var(--c-light);
+  background-color: var(--c-light);
+  animation: hover-shadow 4s infinite;
+}
+
+@keyframes hover-shadow {
+  from {
+    box-shadow: 0 0 10px 8px var(--c-light);
+    background-color: var(--c-light);
+  }
+  60% {
+    box-shadow: 0 0 6px 4px var(--c-dark);
+    background-color: var(--c-dark);
+  }
+  to {
+    box-shadow: 0 0 10px 8px var(--c-light);
+    background-color: var(--c-light);
+  }
+}
