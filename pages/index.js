@@ -1,10 +1,12 @@
 import Head from 'next/head'
 
+import SEO from 'src/components/seo/seo'
 import styles from 'styles/index.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <SEO />
       <Head>
         <title>derrej</title>
         <link rel="icon" type="image/png" href="/favicon.png" />
